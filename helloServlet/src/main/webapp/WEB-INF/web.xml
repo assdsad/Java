@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.cake.helloservlet.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>url</param-name>
+            <param-value>jjafgag:agwga124</param-value>
+        </init-param>
+<!--        <load-on-startup>1</load-on-startup>-->
+<!--        一运行就实例化并初始化-->
+<!--        不加<load-on-startup>1</load-on-startup>  服务器必须在访问之后才实例化，初始化-->
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>CakeServlet</servlet-name>
+        <servlet-class>com.cake.helloservlet.CakeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CakeServlet</servlet-name>
+        <url-pattern>/cake</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CakeServlet1</servlet-name>
+        <servlet-class>com.cake.helloservlet.CakeServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CakeServlet1</servlet-name>
+        <url-pattern>/cake1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowServlet</servlet-name>
+        <servlet-class>com.cake.helloservlet.ShowServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowServlet</servlet-name>
+        <url-pattern>/show</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CodeServlet</servlet-name>
+        <servlet-class>com.cake.helloservlet.CodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CodeServlet</servlet-name>
+        <url-pattern>/code</url-pattern>
+    </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>edit</title>
+</head>
+<body>
+    <form id="editCakeForm" action="editProcess" method="post">
+        修改后的名字：<input type="text" name="editName"/></br>
+        修改后的价格：<input type="text" name="editPrice"/></br>
+        <button type="button" onclick="submitForm()">保存</button>
+    </form>
+</body>
+
+<script>
+    //点击修改按钮后，将其中附带的蛋糕id传递进来
+    //并将其设置为隐藏属性   使得EditServlet可以得到
+    window.onload = function() {
+        // 从 URL 中提取 editId 参数
+        var urlParams = new URLSearchParams(window.location.search);
+        var editId = urlParams.get('editId');
+
+        // 创建隐藏的表单字段
+        var form = document.getElementById('editCakeForm');
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'editId';
+        input.value = editId;
+
+        // 将隐藏字段添加到表单中
+        form.appendChild(input);
+
+        // 可以选择立即提交表单，或者等待用户点击提交按钮
+        // form.submit(); // 如果要立即提交，取消注释这行
+    };
+
+    function submitForm() {
+        // 用户点击提交按钮时调用此函数
+        var form = document.getElementById('editCakeForm');
+        form.submit(); // 提交表单
+    }
+</script>
+</html>
