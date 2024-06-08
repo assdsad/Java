@@ -21,6 +21,11 @@ public class ListServlet extends HttpServlet {
         CakeService cakeService = new CakeService();
         List<Cake> cakes = cakeService.listAll();//把蛋糕数据存入cakes中
 
+        //把数据传给安卓端
+//        Gson gson = new Gson();
+//        gson.from(cakes);
+//        response.getWriter().write(gson.toJson(cakes));
+
         //3、跳转到显示蛋糕信息的servlet
         request.setAttribute("cakes", cakes);//把蛋糕信息和"cakes"字符串链接起来
             //跳转(转发请求)

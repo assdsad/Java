@@ -36,6 +36,7 @@ public class ShowCakeServlet extends HttpServlet {
 //                            "<a href='editCake.html?editId=" + cake.getId() + "'>修改</a>" +//通过javascript
                             " <a href='delete?id=" + cake.getId() + "'>删除</a>" +//点击删除后，把要删除蛋糕的id传过去
                             " <a href='buy?id=" + cake.getId() + "'>购买</a>" +//买的是这个id的蛋糕
+                            " <a href='comment?id=" + cake.getId() + "'>评论</a>" +//买的是这个id的蛋糕
                             "</td></tr>");
                 }
                 out.print("</table> " +"</br>" +
