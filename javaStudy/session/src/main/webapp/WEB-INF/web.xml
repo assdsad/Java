@@ -8,4 +8,16 @@
 <!--        <session-timeout>20</session-timeout>-->
 <!--&lt;!&ndash;        设置会话时长&ndash;&gt;-->
 <!--    </session-config>-->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>org.example.session.LoginServlet</servlet-class>
+        <init-param>
+            <param-name>hello</param-name>
+            <param-value>123456</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
 </web-app>

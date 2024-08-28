@@ -5,6 +5,7 @@ import jakarta.servlet.*;
 import java.io.IOException;
 
 public class Filter1 implements Filter {
+
     public void init(FilterConfig config) throws ServletException {
         System.out.println("filter1 init");
     }

@@ -19,7 +19,7 @@ public class LoginServlet extends HttpServlet {
 
         if (username.equals("zhangsan") && password.equals("123456")) {
             Cookie cookie = new Cookie("un", username);//给cookie取名为un
-            cookie.setMaxAge(-1);//设置最大存活时长，秒  -1表示cookie只适用于当前的浏览会话   0表示删除cookie
+//            cookie.setMaxAge(-1);//设置最大存活时长，秒  -1表示cookie只适用于当前的浏览会话   0表示删除cookie
 //            cookie.setDomain("/");//设置域
             response.addCookie(cookie);//给客户端发送cookie
             response.sendRedirect("main.jsp");

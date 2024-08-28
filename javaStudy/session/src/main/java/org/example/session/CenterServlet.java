@@ -22,6 +22,7 @@ public class CenterServlet extends HttpServlet {
         out.println("<html><body>");
         out.println("欢迎登录" + session.getAttribute("un"));
         out.println("密码为" + session.getAttribute("password"));
+//        out.print("<h1>" + session"</h1>");
 
         out.println("<a href='logoff'>注销</a>");//退出
         out.println("</body></html>");

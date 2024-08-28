@@ -46,10 +46,10 @@ public class ReflectBase {
              System.out.println(value);
          }
 
-         Field id = cls.getDeclaredField("id");//得到id属性
-         id.setAccessible(true);
-         id.set(obj, 2);//把obj对象的id属性值改为2   s.id = 2
-         System.out.println("id = " + id.get(obj));
+//         Field id = cls.getDeclaredField("id");//得到id属性
+//         id.setAccessible(true);
+//         id.set(obj, 2);//把obj对象的id属性值改为2   s.id = 2
+//         System.out.println("id = " + id.get(obj));
      }
 
     public static void main(String[] args) {

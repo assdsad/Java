@@ -16,8 +16,6 @@
                 name = cookie.getValue();//拿到cookie中的值
             }
         }
-    }else {
-
     }
 %>
 

@@ -24,6 +24,7 @@ public class TestServlet extends HttpServlet {
 
         out.print("</body></html>");
         out.close();
+        
     }
 
     @Override
